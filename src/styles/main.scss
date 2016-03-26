@@ -1,0 +1,303 @@
+@import 'norm';
+
+$green: rgb(244, 255, 248);
+$blue: #05ADFF;
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	background-color: $green;
+
+	font-family: 'Calibre-Light', Calibre, Arial, Helvetica, sans-serif;
+	line-height: 1.2;
+
+	padding-bottom: 2.4rem;
+}
+
+// layout
+header {
+	position: relative;
+
+	background-color: $blue;
+}
+
+.column {
+	position: relative;
+
+	width: 46rem;
+	margin: 0 auto;
+}
+
+// typography
+h1 {
+	display: inline-block;
+
+	margin: 0;
+	padding: 1.3rem 4.5rem 0.9rem 0;
+
+	font-family: 'Calibre-Light';
+	font-weight: normal;
+	font-size: 1.4rem;
+
+	color: $green;
+}
+
+h2 {
+	display: inline-block;
+
+	font-family: 'Neutraface2Condensed-Bold';
+
+	font-size: 6.875rem;
+	line-height: 1;
+	margin: 4rem 0 3.6rem;
+}
+
+h3 {
+	display: inline-block;
+	border-bottom: 2px solid #000;
+}
+
+p {
+	margin: 1.5rem 0;
+
+	font-size: 1.5rem;
+}
+
+.info {
+	position: absolute;
+
+    right: 0;
+    bottom: 1rem;
+
+	padding-bottom: 0.5rem;
+
+	font-family: 'Calibre-Light';
+	font-weight: normal;
+	font-size: 1.4rem;
+	line-height: 0;
+	text-transform: uppercase;
+
+	color: $green;
+
+	text-decoration: none;
+
+	border-bottom: 2px solid $green;
+}
+
+.title {
+	text-align: center;
+}
+
+.year {
+	display: inline-block;
+
+	font-family: 'Calibre-Light';
+	font-size: 1.5rem;
+}
+
+.academy {
+	font-family: 'Calibre-Regular';
+	margin: 0;
+}
+
+.author {
+	margin: 2.4rem;
+
+	p {
+		margin: 0;
+	}
+}
+
+.break {
+	margin: 2rem auto;
+
+	&:before{
+		content: "-------------";
+		display: block;
+
+		font-size: 1.5rem;
+		text-align: center;
+	}
+}
+
+// media
+.image-top {
+	position: relative;
+
+	top: 0;
+	left: 0;
+	right: 0;
+
+	width: 100%;
+	min-height: 100%;
+
+	margin: 0;
+
+	background-size: cover;
+    background-position: 50% 100%;
+}
+
+
+.image-architect {
+	position: relative;
+
+	width: 100%;
+	min-height: 100%;
+
+	background-color: lightgray;
+
+	background-size: cover;
+    background-position: 50% 100%;
+}
+
+article {
+	.audio {
+		margin: 3.6rem auto;
+	}
+
+	.image-architect {
+		margin: 3.6rem 0;
+	}
+
+	.image-drawings {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+
+		margin: 2.4rem 10vw;
+
+		.image-drawing {
+			margin: 1.2rem 2.4rem;
+
+			img {
+				display: block;
+
+				max-width: 24rem;
+				max-height: 24rem;
+				width: auto;
+				height: auto;
+			}
+
+			.caption {
+				font-size: 0.9rem;
+			}
+		}
+	}
+}
+
+.box {
+	display: inline-block;
+
+	width: 8rem;
+	height: 2.4rem;
+
+	margin-top: 1.2rem;
+	margin-right: 1rem;
+
+	border: 1px solid lightgray;
+}
+
+.player {
+	width: 36rem;
+	height: 6rem;
+
+	margin: 0 auto;
+
+	border: 1px solid lightgray;
+}
+
+// addons
+img[data-action="zoom"] {
+  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+}
+
+.zoom-img,
+.zoom-img-wrap {
+  position: relative;
+  z-index: 666;
+  -webkit-transition: all 300ms;
+       -o-transition: all 300ms;
+          transition: all 300ms;
+}
+
+img.zoom-img {
+  cursor: pointer;
+  cursor: -webkit-zoom-out;
+  cursor: -moz-zoom-out;
+}
+
+.zoom-overlay {
+  z-index: 420;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  filter: "alpha(opacity=0)";
+  opacity: 0;
+  -webkit-transition:      opacity 300ms;
+       -o-transition:      opacity 300ms;
+          transition:      opacity 300ms;
+}
+
+.zoom-overlay-open .zoom-overlay {
+  filter: "alpha(opacity=100)";
+  opacity: 1;
+}
+
+
+// player
+iframe {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	visibility: hidden;
+}
+
+.player {
+	position: relative;
+
+	width: 100%;
+	height: 0.5rem;
+	margin: 1rem 0;
+
+	border: 0;
+
+	cursor: pointer;
+}
+
+.player-button {
+	color: $blue;
+}
+
+.waveform {
+	position: absolute;
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	background-color: lightgray;
+
+	z-index: 50;
+}
+
+.position {
+	position: absolute;
+
+	opacity: 1.0;
+
+	height: 100%;
+	width: 0;
+
+	background-color: $blue;
+	transition: width 100ms linear;
+
+	z-index: 100;
+}
