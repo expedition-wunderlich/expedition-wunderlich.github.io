@@ -1,5 +1,8 @@
 @import 'norm';
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,300italic);
+
 $green: rgb(244, 255, 248);
 $blue: #05ADFF;
 
@@ -8,17 +11,88 @@ $blue: #05ADFF;
 body {
 	background-color: $green;
 
-	font-family: 'Calibre-Light', Calibre, Arial, Helvetica, sans-serif;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	font-weight: 300;
 	line-height: 1.2;
 
 	padding-bottom: 2.4rem;
 }
 
 // layout
+// header with flexbox
 header {
 	position: relative;
 
-	background-color: $blue;
+	min-width: 19rem;
+	width: 100%;
+	margin: 0;
+
+	background: $blue;
+
+	.header-column {
+		-js-display: flex;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+
+		max-width: 66rem;
+		margin: 0 auto;
+		padding: 0.5rem 1rem 0;
+
+		.title-block,
+		nav {
+			display: inline-block;
+
+			margin: 1rem 0;
+		}
+
+		.title-block {
+			margin-right: 4rem;
+			flex-grow: 0;
+		}
+
+		nav {
+			flex-grow: 1;
+			align-self: flex-end;
+
+			text-align: right;
+
+			@media (max-width: 42rem) {
+				text-align: left;
+			}
+
+			.info {
+				display: inline-block;
+				margin: 0;
+				padding-bottom: 0.5rem;
+
+				font-family: Roboto;
+				font-weight: 300;
+
+				font-weight: normal;
+				font-size: 1.3125rem;
+				line-height: 0;
+				text-transform: uppercase;
+
+				color: $green;
+
+				text-decoration: none;
+
+				// &:hover {
+				// 	border-bottom: 2px solid $green;
+				// }
+			}
+		}
+	}
+}
+
+
+.large-column {
+	position: relative;
+
+	max-width: 66rem;
+	margin: 0 auto;
+	padding: 1rem;
 }
 
 .column {
@@ -30,14 +104,11 @@ header {
 
 // typography
 h1 {
-	display: inline-block;
-
 	margin: 0;
-	padding: 1.3rem 4.5rem 0.9rem 0;
 
-	font-family: 'Calibre-Light';
-	font-weight: normal;
-	font-size: 1.4rem;
+	font-size: 1.3125rem;
+	font-weight: 300;
+	line-height: 1.1;
 
 	color: $green;
 }
@@ -45,9 +116,10 @@ h1 {
 h2 {
 	display: inline-block;
 
-	font-family: 'Neutraface2Condensed-Bold';
+	font-family: Montserrat;
+	// font-size: 6.875rem;
+	font-size: 3.875rem;
 
-	font-size: 6.875rem;
 	line-height: 1;
 	margin: 4rem 0 3.6rem;
 }
@@ -58,30 +130,9 @@ h3 {
 }
 
 p {
-	margin: 1.5rem 0;
+	margin: 1.3125rem 0;
 
-	font-size: 1.5rem;
-}
-
-.info {
-	position: absolute;
-
-    right: 0;
-    bottom: 1rem;
-
-	padding-bottom: 0.5rem;
-
-	font-family: 'Calibre-Light';
-	font-weight: normal;
-	font-size: 1.4rem;
-	line-height: 0;
-	text-transform: uppercase;
-
-	color: $green;
-
-	text-decoration: none;
-
-	border-bottom: 2px solid $green;
+	font-size: 1.3125rem;
 }
 
 .title {
@@ -91,12 +142,14 @@ p {
 .year {
 	display: inline-block;
 
-	font-family: 'Calibre-Light';
-	font-size: 1.5rem;
+	// font-family: 'Calibre-Light';
+	font-weight: 300;
+	font-size: 1.3125rem;
 }
 
 .academy {
-	font-family: 'Calibre-Regular';
+	// font-family: 'Calibre-Regular';
+	font-weight: 400;
 	margin: 0;
 }
 
@@ -120,6 +173,41 @@ p {
 	}
 }
 
+// grid
+.grid {
+	-js-display: flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	max-width: 67.5rem;
+	margin: 5rem auto;
+
+	.item {
+		display: block;
+
+		min-width: 19rem;
+		width: 19rem;
+		height: 19rem;
+		margin: 1.75rem;
+
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+.p01 { background-image: url('/images/p01.jpg'); }
+.p02 { background-image: url('/images/p02.jpg'); }
+.p03 { background-image: url('/images/p03.jpg'); }
+.p04 { background-image: url('/images/p04.jpg'); }
+.p05 { background-image: url('/images/p05.jpg'); }
+.p06 { background-image: url('/images/p06.jpg'); }
+.p07 { background-image: url('/images/p07.jpg'); }
+.p08 { background-image: url('/images/p08.jpg'); }
+.p09 { background-image: url('/images/p09.jpg'); }
+.p10 { background-image: url('/images/p10.jpg'); }
+
 // media
 .image-top {
 	position: relative;
@@ -136,7 +224,6 @@ p {
 	background-size: cover;
     background-position: 50% 100%;
 }
-
 
 .image-architect {
 	position: relative;
@@ -160,9 +247,11 @@ article {
 	}
 
 	.image-drawings {
+		-js-display: flex;
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-around;
+		// justify-content: space-around;
+		justify-content: center;
 
 		margin: 2.4rem 10vw;
 
@@ -179,6 +268,7 @@ article {
 			}
 
 			.caption {
+				max-width: 24rem;
 				font-size: 0.9rem;
 			}
 		}
@@ -197,58 +287,14 @@ article {
 	border: 1px solid lightgray;
 }
 
-.player {
-	width: 36rem;
-	height: 6rem;
+// .player {
+// 	width: 36rem;
+// 	height: 6rem;
 
-	margin: 0 auto;
+// 	margin: 0 auto;
 
-	border: 1px solid lightgray;
-}
-
-// addons
-img[data-action="zoom"] {
-  cursor: pointer;
-  cursor: -webkit-zoom-in;
-  cursor: -moz-zoom-in;
-}
-
-.zoom-img,
-.zoom-img-wrap {
-  position: relative;
-  z-index: 666;
-  -webkit-transition: all 300ms;
-       -o-transition: all 300ms;
-          transition: all 300ms;
-}
-
-img.zoom-img {
-  cursor: pointer;
-  cursor: -webkit-zoom-out;
-  cursor: -moz-zoom-out;
-}
-
-.zoom-overlay {
-  z-index: 420;
-  background: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  filter: "alpha(opacity=0)";
-  opacity: 0;
-  -webkit-transition:      opacity 300ms;
-       -o-transition:      opacity 300ms;
-          transition:      opacity 300ms;
-}
-
-.zoom-overlay-open .zoom-overlay {
-  filter: "alpha(opacity=100)";
-  opacity: 1;
-}
-
+// 	border: 1px solid lightgray;
+// }
 
 // player
 iframe {
@@ -300,4 +346,47 @@ iframe {
 	transition: width 100ms linear;
 
 	z-index: 100;
+}
+
+// addons
+img[data-action="zoom"] {
+  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+}
+
+.zoom-img,
+.zoom-img-wrap {
+  position: relative;
+  z-index: 666;
+  -webkit-transition: all 300ms;
+       -o-transition: all 300ms;
+          transition: all 300ms;
+}
+
+img.zoom-img {
+  cursor: pointer;
+  cursor: -webkit-zoom-out;
+  cursor: -moz-zoom-out;
+}
+
+.zoom-overlay {
+  z-index: 420;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  filter: "alpha(opacity=0)";
+  opacity: 0;
+  -webkit-transition:      opacity 300ms;
+       -o-transition:      opacity 300ms;
+          transition:      opacity 300ms;
+}
+
+.zoom-overlay-open .zoom-overlay {
+  filter: "alpha(opacity=100)";
+  opacity: 1;
 }
