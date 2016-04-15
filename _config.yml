@@ -1,9 +1,14 @@
 title: Wunderlich
 name: Wunderlich
-email: your-email@domain.com
+email: studio@platvorm.ee
 description: Ekspeditsioon
-url: "http://wunderlich.ee"
+url: "http://wunderlich.github.io"
 permalink: /:title/
 
 # Build settings
-markdown: kramdown
+kramdown:
+    input: GFM
+    parse_block_html: false
+sass:
+    sass_dir: /_sass/
+    style: compressed
