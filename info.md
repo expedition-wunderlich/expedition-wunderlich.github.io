@@ -33,61 +33,61 @@ The exhibition space’s design is oriented towards the different senses and cre
 
 {% include break.html %}
 
-#### Näitusel osalevad / Participants
+##### Näitusel osalevad / Participants
 Bruno Tomberg, Leila Pärtelpoeg, Vello Asi, Teno Velbri, Mait Summatavet,
 Taevo Gans, Aulo Padar, Juta Lember, Eerik Olle, Pille Lausmäe, Taso Mähar
 {:.credits}
 
-#### Kuraator / Curator
+##### Kuraator / Curator
 Carl-Dag Lige
 {:.credits}
 
-#### Produtsent / Producer
+##### Produtsent / Producer
 Hannes Praks
 {:.credits}
 
-#### Näituse kujundus / Exhibition design
+##### Näituse kujundus / Exhibition design
 Hannes Praks, Katrin Talvik, Merilin Tee, Sabine Suuster, Martin Saar,
 Karl Taul, Alden Jõgisuu, Tõnu Lensment
 {:.credits}
 
-#### Graafiline kujundus / Graphic design
+##### Graafiline kujundus / Graphic design
 Aadam Kaarma
 {:.credits}
 
-#### Veebidisain / Web design
+##### Veebidisain / Web design
 Aadam Kaarma, Mikk Meelak
 {:.credits}
 
-#### Fotograaf / Photography
+##### Fotograaf / Photography
 Renee Altrov
 {:.credits}
 
-#### Heli ja elektroonika / Audio and electronics
+##### Heli ja elektroonika / Audio and electronics
 Hans-Gunter Lock, Taavi Tulev
 {:.credits}
 
-#### Tekstid / Texts
+##### Tekstid / Texts
 Carl-Dag Lige
 {:.credits}
 
-#### Keeletoimetus / Editing
+##### Keeletoimetus / Editing
 Katrin Hallas
 {:.credits}
 
-#### Tõlge / Translation
+##### Tõlge / Translation
 Adam Cullen
 {:.credits}
 
-#### Korraldajad / Organisers
+##### Korraldajad / Organisers
 Eesti Arhitektuurimuuseum / Museum of Estonian Architecture
 Eesti Kunstiakadeemia / Estonian Academy of Arts
 {:.credits}
 
-#### Toetaja / Supported by
+##### Toetaja / Supported by
 Eesti Kultuurkapital / Cultural Endowment of Estonia
 {:.credits}
 
-#### Täname / Special thanks to
+##### Täname / Special thanks to
 Leida Tarvas, Raili Morgen, Marit Ilison, Annika Kaldoja, Helen Teetamm, Keiu Albi, Tiiu Saal, Raimond Ummus, Heleri Koltšin, Ardo Hiiuväin, Martin Kukk, Kaarel Kuusk, Sigrid Pavel, Avo Tragel, Mart Saarepuu, Kaido Kruusamets, Triin Ojari, Marju Meschin, Laos Koort, Einar-Rudolf Kiviloo, Mait Väljas, Sandra Kossorotova, Kino Sõprus, Les Petites Disainipood, Liviko, Rahvusooper Estonia, Tallinna Linnateater, Teater NO99, Ugala Teater, Vaba Lava, Vene Teater, Von Krahli Teater, Kanuti Gildi SAAL, Rahva Raamat
 {:.credits}

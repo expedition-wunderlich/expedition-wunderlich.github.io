@@ -11,6 +11,7 @@ $foreground: #B6E3E7;
 $text: #202020;
 $regular: 1.25rem;
 $small: 1.125rem;
+$regular-mobile: 1rem;
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
@@ -45,15 +46,19 @@ header {
 	.header-column {
 		-js-display: flex;
 		display: flex;
-		flex-flow: row wrap;
+		flex-flow: column wrap;
 		justify-content: flex-start;
 
 		max-width: 66rem;
 		margin: 0 auto;
 		padding: 0rem 1.1rem 0rem;
 
+		@media (min-width: 42rem) {
+			flex-flow: row wrap;
+		}
+
 		h1 {
-			margin: 1rem 0 0;
+			margin: 0.6rem 0 0;
 
 			font-size: 0.8rem;
 			font-weight: 400;
@@ -61,26 +66,27 @@ header {
 
 			color: $text;
 
+			@media (min-width: 32rem) {
+				margin: 0.8rem 0 0.8rem;
+				font-size: 1.1rem;
+			}
+
 			@media (min-width: 42rem) {
 				margin: 1rem 0 1rem;
 				font-size: 1.25rem;
 			}
 		}
 
-		.title-block,
-		nav {
-			display: inline-block;
-		}
-
-		nav {
-			margin: 0 0 1rem;
-		}
-
 		.title-block {
+			display: block;
+
 			margin: 0;
 			flex-grow: 0;
 
-			@media (min-width: 42rem) { margin: 0 3.7rem 0 0; }
+			@media (min-width: 42rem) {
+				display: inline-block;
+				margin: 0 3.7rem 0 0;
+			}
 
 			.row {
 				display: inline-block;
@@ -101,12 +107,26 @@ header {
 			}
 		}
 
-		nav {
+		.info {
+			display: inline-block;
 			flex-grow: 1;
-			align-self: flex-end;
+			align-self: flex-start;
+
+			margin: 0 0 0.3rem;
 			text-align: left;
 
-			.info {
+			@media (min-width: 32rem) {
+				margin: 0 0 0.6rem;
+			}
+
+			@media (min-width: 42rem) {
+				text-align: right;
+				align-self: flex-end;
+
+				margin: 0 0 1rem;
+			}
+
+			.info-text {
 				display: inline-block;
 				margin: 0;
 				padding-bottom: 0.6rem;
@@ -118,19 +138,14 @@ header {
 				text-transform: uppercase;
 
 				color: $text;
-
 				text-decoration: none;
+				border-bottom: 1px solid transparent;
+
+				@media (min-width: 32rem) { font-size: 1.1rem; }
+				@media (min-width: 42rem) { font-size: 1.25rem; }
 
 				&:hover {
 					border-bottom: 1px solid $text;
-				}
-			}
-
-			@media (min-width: 42rem) {
-				text-align: right;
-
-				.info {
-					font-size: 1.25rem;
 				}
 			}
 		}
@@ -155,7 +170,8 @@ p {
 	margin: $regular auto;
 	padding: 0 1rem;
 
-	font-size: $regular;
+	font-size: $regular-mobile;
+	@media (min-width: 42rem) { font-size: $regular; }
 }
 
 h2 {
@@ -171,6 +187,7 @@ h2 {
 	.year {
 		display: block;
 		margin: 1rem;
+
 		@media (min-width: 42rem) {
 			display: inline-block;
 			margin: 0;
@@ -187,12 +204,14 @@ h2 {
 }
 
 h3 {
-	width: 48rem;
+	max-width: 48rem;
 	margin: $regular auto 0;
 	padding: 0 1rem;
 
-	font-size: $regular;
 	font-weight: 500;
+
+	font-size: $regular-mobile;
+	@media (min-width: 42rem) { font-size: $regular; }
 }
 
 h4 {
@@ -200,19 +219,28 @@ h4 {
 	margin: $regular auto;
 	padding: 0 1rem;
 
-	font-size: 1.17rem;
 	font-weight: 400;
 	text-decoration: underline;
+
+	font-size: $regular-mobile;
+	@media (min-width: 42rem) { font-size: 1.17rem; }
 }
 
 h5 {
 	max-width: 48rem;
-	margin: $regular auto;
+	margin: $regular auto 0;
 	padding: 0 1rem;
 
-	font-size: 1.17rem;
 	font-weight: 400;
-	text-decoration: underline;
+
+	font-size: $regular-mobile;
+	@media (min-width: 42rem) { font-size: $regular; }
+}
+
+.text-ref {
+	font-size: $small;
+	font-weight: 300;
+	margin-bottom: 0;
 }
 
 a {
@@ -402,7 +430,8 @@ footer {
 	font-size: $small;
 
 	.player-info {
-		font-size: $small;
+		font-size: $regular-mobile;
+		@media (min-width: 42rem) { font-size: $small; }
 	}
 
 	.player {

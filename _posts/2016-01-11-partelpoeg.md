@@ -51,8 +51,10 @@ There was a moment when I was a Viking – when Matti Klinge started writing. It
 
 I feel this acutely. And nowadays, when everything is public and everybody may research their ancestry, I have learned – from a single scribbled line – that my first known forefather was a mercenary soldier of Carl XII. This is a thought of comfort for me, in the story where every single man could have been a serf.
 
-*Estonian State Forest Management Centre
+\* Estonian State Forest Management Centre
+{:.text-ref}
 
-** Schwertbrüderorden, the religious-military order established for the conversion of pagans in the territory of modern Estonia and Latvia in the 13th century, later merged with the Teutonic Order
+\** Schwertbrüderorden, the religious-military order established for the conversion of pagans in the territory of modern Estonia and Latvia in the 13th century, later merged with the Teutonic Order
+{:.text-ref}
 
 {% include images.html images=page.images %}
