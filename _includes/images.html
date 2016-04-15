@@ -1,0 +1,9 @@
+<section class="drawings">
+	{% for image in include.images %}
+		<div class="drawing">
+			<img src="{{ site.baseurl }}{{ image.src }}" data-action="zoom">
+			<p class="caption">{{ image.caption_et }}</p>
+			<p class="caption">{{ image.caption_en }}</p>
+		</div>
+	{% endfor %}
+</section>

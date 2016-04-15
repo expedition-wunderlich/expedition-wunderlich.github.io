@@ -1,0 +1,37 @@
+<section class="audio">
+	<div class="player-info"></div>
+
+	<div class="player">
+		<div class="waveform"></div>
+		<div class="position"></div>
+	</div>
+
+	<nav>
+		<div class="player-button paused">
+			<svg class="play" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+			x="0px" y="0px" width="23.1px" height="20.3px" viewBox="0 0 23.1 20.3" enable-background="new 0 0 23.1 20.3" xml:space="preserve">
+				<g>
+					<line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="22.6" y1="10.2" x2="0.5" y2="10.2" />
+					<polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="12.9,19.8 22.6,10.2 12.9,0.5" />
+				</g>
+			</svg>
+			<svg class="pause" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="23.1px" height="20.3px" viewBox="0 0 23.1 20.3" enable-background="new 0 0 23.1 20.3" xml:space="preserve">
+				<g>
+					<line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.0" y1="0.5" x2="8.0" y2="19.8"/>
+					<line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15.1" y1="0.5" x2="15.1" y2="19.8"/>
+				</g>
+			</svg>
+		</div>
+
+		<div class="player-timing">
+			<div class="player-seek">00:00</div>
+			<div class="player-duration">00:00</div>
+		</div>
+
+		<div class="player-logo">
+			<a class="soundcloud" href="{{ include.audio }}"><img src="{{site.baseurl}}/images/sc-logo.png"></a>
+		</div>
+	</nav>
+</section>
+
+<iframe class="sc-widget" src="//w.soundcloud.com/player/?url={{ include.audio }}"></iframe>

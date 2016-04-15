@@ -1,4 +1,1 @@
-assets/
-.env
-build/
-dist/
+_site/

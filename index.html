@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% include header.html %}
+<div class="grid">
+	{% for post in site.posts %}
+		<a class="item" href="{{ post.url | prepend: site.baseurl }}">
+			<div class="image" style="background-image: url('{{ site.baseurl }}{{ post.image_sm }}')"></div>
+			<span class="name">{{ post.title }}</span>
+		</a>
+    {% endfor %}
+	<a class="item item-pseudo" href="#"></a>
+	<a class="item item-pseudo" href="#"></a>
+</div>
