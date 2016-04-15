@@ -58,7 +58,7 @@ header {
 		}
 
 		h1 {
-			margin: 0.6rem 0 0;
+			margin: 0.6rem 0 0.8rem;
 
 			font-size: 0.8rem;
 			font-weight: 400;
@@ -67,7 +67,7 @@ header {
 			color: $text;
 
 			@media (min-width: 32rem) {
-				margin: 0.8rem 0 0.8rem;
+				margin: 0.8rem 0 1.1rem;
 				font-size: 1.1rem;
 			}
 
@@ -484,8 +484,7 @@ footer {
 
 		.player-button {
 			flex-grow: 1;
-			align-self: flex-end;
-			margin-bottom: 0.45rem;
+			align-self: center;
 
 			stroke: #231F20;
 			cursor: pointer;
@@ -517,8 +516,8 @@ footer {
 
 		.player-timing {
 			flex-grow: 1;
-			align-self: flex-end;
-			margin-bottom: 0.3rem;
+			// align-self: flex-end;
+			// margin-bottom: 0.3rem;
 			text-align: center;
 
 			div {
@@ -529,9 +528,16 @@ footer {
 
 		.player-logo {
 			flex-grow: 9;
-			align-self: flex-end;
+			align-self: center;
 
 			text-align: right;
+
+			img {
+				width: 6rem;
+				margin-bottom: 0.1rem;
+
+				@media (min-width: 42rem) { width: 9rem; }
+			}
 		}
 	}
 }
@@ -569,6 +575,17 @@ article {
 				margin: 0 auto $regular/2;
 			}
 		}
+	}
+}
+
+.button-back {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.page- {
+	.button-back {
+		display: none;
 	}
 }
 
