@@ -25,6 +25,13 @@ body {
 	padding-bottom: 2.4rem;
 }
 
+
+#overlay {
+	position: fixed; top: 0; right: 0; bottom: 0; left: 0;
+	background: $foreground;
+	z-index: 9000;
+}
+
 header {
 	position: relative;
 
@@ -189,6 +196,16 @@ h3 {
 }
 
 h4 {
+	max-width: 48rem;
+	margin: $regular auto;
+	padding: 0 1rem;
+
+	font-size: 1.17rem;
+	font-weight: 400;
+	text-decoration: underline;
+}
+
+h5 {
 	max-width: 48rem;
 	margin: $regular auto;
 	padding: 0 1rem;
