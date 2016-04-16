@@ -30,9 +30,9 @@ $(document).ready(function () {
 	}, false);
 
 	if ($('iframe.sc-widget').length) {
+		console.log('iframe is');
+
 		var player;
-		var pOffset;
-		var pWidth;
 		var scrub;
 
 		(function () {
@@ -50,12 +50,10 @@ $(document).ready(function () {
 
 			player = SC.Widget($('iframe.sc-widget')[0]);
 
-			pOffset = $('.player').offset();
-			pWidth = $('.player').width();
-
 			$('.player-button').on('click', function(e) {
 				e.preventDefault();
 
+				console.log('play');
 				player.toggle();
 			});
 
@@ -69,22 +67,25 @@ $(document).ready(function () {
 			});
 
 			player.bind(SC.Widget.Events.PLAY, function() {
+				console.log('PLAY');
 				$('.player-button').addClass('playing');
 				$('.player-button').removeClass('paused');
 			});
 
 			player.bind(SC.Widget.Events.PAUSE, function() {
+				console.log('PAUSE');
 				$('.player-button').removeClass('playing');
 				$('.player-button').addClass('paused');
 			});
 
 			$('.player').mousemove(function(e) {
-				scrub = e.pageX - pOffset.left;
+				scrub = e.pageX - $('.player').offset().left;
 			});
 
-			$('.player').click(function() {
+			$('.player').on('click', function() {
+				console.log('player click');
 				$('.position').css('width', scrub + 'px');
-				var seek = player.duration * (scrub / pWidth);
+				var seek = player.duration * (scrub / $('.player').width());
 				player.seekTo(seek);
 
 				$('.player-seek').html(msToTime(seek));
