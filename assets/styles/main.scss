@@ -271,8 +271,10 @@ a {
 	text-align: left;
 
 	.back-button {
-		font-size: $regular;
+		font-size: $regular-mobile;
 		font-weight: 400;
+
+		@media (min-width: 42rem) { font-size: $regular; }
 	}
 }
 
