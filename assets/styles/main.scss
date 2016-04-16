@@ -270,13 +270,15 @@ footer {
 
 	p { margin: 0; }
 
-	.back-button {
+	.back-button-container {
 		display: block;
 		margin: 1rem 0 6rem;
-
-		font-size: $regular;
-		font-weight: 400;
 		text-align: center;
+
+		.back-button {
+			font-size: $regular;
+			font-weight: 400;
+		}
 	}
 
 	.logos {
