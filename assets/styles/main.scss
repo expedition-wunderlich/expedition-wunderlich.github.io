@@ -497,11 +497,8 @@ footer {
 		font-size: $small;
 
 		.player-button {
-			flex-grow: 1;
+			flex-grow: 2;
 			align-self: center;
-
-			height: 1.5625rem;
-			padding-top: 0.1rem;
 
 			stroke: #231F20;
 			cursor: pointer;
@@ -538,22 +535,21 @@ footer {
 			}
 		}
 
-		.player-timing {
+		.player-seek,
+		.player-duration {
 			flex-grow: 1;
-			height: 1.5625rem;
+			// height: 1.5625rem;
 			text-align: center;
 
-			div {
-				display: inline-block;
-				margin: 0 0.7rem;
-			}
+			display: block;
+			// margin: 0 0.7rem;
 		}
 
 		.player-logo {
 			flex-grow: 9;
 			align-self: center;
 
-			height: 1.5625rem;
+			// height: 1.5625rem;
 
 			text-align: right;
 
