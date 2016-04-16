@@ -164,11 +164,15 @@ p {
 }
 
 h2 {
-	margin: 4rem 0 3.6rem;
+	margin: 4rem 0 3rem;
 
 	font-family: Montserrat;
 	font-size: 1.875rem;
-	@media (min-width: 42rem) { font-size: 3.875rem; }
+
+	@media (min-width: 42rem) {
+		margin: 4rem 0 3.6rem;
+		font-size: 3.875rem;
+	}
 
 	line-height: 1;
 	text-align: center;
@@ -255,12 +259,16 @@ a {
 
 footer {
 	max-width: 66rem;
-	margin: 4.8rem auto 2.4rem;
+	margin: 3rem auto 2.4rem;
 	padding: 0 1.2rem;
 
-	p {
-		margin: 0;
-	}
+	@media (min-width: 42rem) { margin: 4.8rem auto 2.4rem; }
+
+	p { margin: 0; }
+
+	// .back-button {
+
+	// }
 
 	.logos {
 		-js-display: flex;
@@ -296,6 +304,7 @@ footer {
 
 .break {
 	margin: 2rem auto;
+	@media (min-width: 42rem) { margin: 1rem auto; }
 
 	&:before{
 		content: "-------------";
@@ -401,11 +410,12 @@ footer {
 
 	width: 64rem;
 	height: 64rem;
-	margin: 3.6rem auto;
+	margin: 3rem auto;
 
 	@media (max-width: 66rem) {
 		width: auto;
 		height: 100vw;
+		margin: 3.6rem auto;
 	}
 
 	background-color: lightgray;
@@ -416,10 +426,12 @@ footer {
 
 .audio {
 	max-width: 48rem;
-	margin: 3.6rem auto;
+	margin: 3rem auto;
 	padding: 0 1rem;
 
 	font-size: $small;
+
+	@media (min-width: 42rem) { margin: 3.6rem auto; }
 
 	.player-info {
 		font-size: $regular-mobile;
@@ -543,14 +555,12 @@ article {
 		flex-flow: row wrap;
 		justify-content: center;
 
-		margin: 2.4rem 1rem;
+		margin: 1.8rem 1rem;
+		@media (max-width: 28rem) { margin: 2.4rem 1rem; }
 
 		.drawing {
 			margin: 1.2rem 2.4rem;
-
-			@media (max-width: 28rem) {
-				margin: 1.2rem 0;
-			}
+			@media (max-width: 28rem) { margin: 1.2rem 0; }
 
 			img {
 				display: block;
