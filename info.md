@@ -7,9 +7,9 @@ permalink: /info/
 
 Kuidas luua sõbralikku ja vaimustavat ruumi? Mis teeb ruumi heaks? Kas Eesti ruumil on omapära? Kuidas õpetada neid, kes meie elukeskkonda kavandavad? Mida õppida pikaaegse kogemusega sisearhitektidelt ja disaineritelt? Käesolev näitus on katse rääkida ruumist, tema loojast ja kasutajast kui sidusast tervikust. Näituse keskmes on üksteist Eesti sisearhitekti ja disainerit, kes on kõik eri aegadel lõpetanud Eesti Kunstiakadeemia sisearhitektuuri osakonna. Näituse koostajate soov oli luua aktiivne, lavastuslik ja mänguline suhe Eesti sisearhitektuuri ja selle õpetamise ajalooga, leida selles rägastikus üles need väärtused ja teadmised, millel võiks olla tähtsust ka tänapäeval. „Ekspeditsioon Wunderlich” on korraga nii seikluslik rännak Eesti sisearhitektuuri (hariduse) ajalukku kui ka intiimne kohtumine persoonidega, kelle loodud keskkonnas me igapäevaselt liigume. Näitus sai teoks EKA sisearhitektuuri osakonna ja Eesti Arhitektuurimuuseumi koostöös, kus keskne roll oli EKA praegustel sisearhitektuuri tudengitel.
 
-„Ekspeditsioon Wunderlich on sümboolne pühendus, hommage Richard Wunderlichi loomingule ja erialasele tegevusele. Richard Wunderlich (1902–1976) oli sisearhitekt ja mööblidisainer, praeguse EKA sisearhitektuuri osakonna esimene juhataja (1940–1941), teadaolevalt esimene Eesti sisearhitekt, kes omandas ka erialase hariduse – aastatel 1928–1929  õppis ta riigi stipendiaadina Kölni Werkschules just sisearhitektuuri. Wunderlich on seega üks Eesti sisearhitektuuri eriala kujunemise ja professionaliseerumise võtmefiguure, omamoodi isakuju, kuigi tema otsene mõju meie elukeskkonnale piirdub vaid üksikute säilinud mööblikomplektidega, neist tõenäoliselt tuntuim on presidendi kantselei koosolekute saali mööbel Kadriorus (1938).
+„Ekspeditsioon Wunderlich on sümboolne pühendus, hommage Richard&nbsp;Wunderlichi loomingule ja erialasele tegevusele. Richard&nbsp;Wunderlich (1902–1976) oli sisearhitekt ja mööblidisainer, praeguse EKA sisearhitektuuri osakonna esimene juhataja (1940–1941), teadaolevalt esimene Eesti sisearhitekt, kes omandas ka erialase hariduse – aastatel 1928–1929  õppis ta riigi stipendiaadina Kölni Werkschules just sisearhitektuuri. Wunderlich on seega üks Eesti sisearhitektuuri eriala kujunemise ja professionaliseerumise võtmefiguure, omamoodi isakuju, kuigi tema otsene mõju meie elukeskkonnale piirdub vaid üksikute säilinud mööblikomplektidega, neist tõenäoliselt tuntuim on presidendi kantselei koosolekute saali mööbel Kadriorus (1938).
 
-Eesti Kunstiakadeemia sisearhitektuuri osakond on väikeste vaheaegadega tegutsenud alates 1930. aastate lõpust. Vello Asi on oletanud, et just Wunderlich algatas omaaegses Riigi Kunsttööstuskoolis ruumikujunduse eriala loomise. Osakonda on juhtinud nii Eesti silmapaistvad arhitektid kui ka sisearhitektid. Pärast Richard Wunderlichi põgenemist Läände 1944. aastal sai toonase nimetusega Tallinna Riikliku Tarbekunsti Instituudi ruumikujunduse kateedri juhatajaks arhitekt Edgar Johan Kuusik (1944–1950). Tema järel juhtis nüüd juba Eesti NSV Riikliku Kunstiinstituudi ruumikujunduse kateedrit arhitekt Edgar Velbri (1950–1967, vaheaegadega). Pärast teda on osakonna eesotsas olnud sisearhitektid – Väino Tamm (1968–1986), Leo Leesaar (1986–1995), Toivo Raidmets (1995–2014) ning Hannes Praks (2014–…).
+Eesti Kunstiakadeemia sisearhitektuuri osakond on väikeste vaheaegadega tegutsenud alates 1930. aastate lõpust. Vello&nbsp;Asi on oletanud, et just Wunderlich algatas omaaegses Riigi Kunsttööstuskoolis ruumikujunduse eriala loomise. Osakonda on juhtinud nii Eesti silmapaistvad arhitektid kui ka sisearhitektid. Pärast Richard Wunderlichi põgenemist Läände 1944. aastal sai toonase nimetusega Tallinna Riikliku Tarbekunsti Instituudi ruumikujunduse kateedri juhatajaks arhitekt Edgar Johan Kuusik (1944–1950). Tema järel juhtis nüüd juba Eesti NSV Riikliku Kunstiinstituudi ruumikujunduse kateedrit arhitekt Edgar Velbri (1950–1967, vaheaegadega). Pärast teda on osakonna eesotsas olnud sisearhitektid – Väino&nbsp;Tamm (1968–1986), Leo&nbsp;Leesaar (1986–1995), Toivo&nbsp;Raidmets (1995–2014) ning Hannes&nbsp;Praks (2014–…).
 
 Kõik näitusel portreteeritavad inimesed on tänaseks suure elu- ja töökogemusega isiksused. Näituse ettevalmistuste käigus avanes tegijatele 11 eriilmelist ja isiklikku sisearhitektimaailma, millest killuke on jõudnud ka väljapanekule. Näituse piiritlevad ajaliselt Bruno Tomberg, kes lõpetas õpingud 1950. aastal, ning Taso Mähar, kes lõpetas 1990. aastal.
 
@@ -34,49 +34,47 @@ The exhibition space’s design is oriented towards the different senses and cre
 {% include break.html %}
 
 ##### Näitusel osalevad / Participants
-Bruno Tomberg, Leila Pärtelpoeg, Vello Asi, Teno Velbri, Mait Summatavet,
-Taevo Gans, Aulo Padar, Juta Lember, Eerik Olle, Pille Lausmäe, Taso Mähar
+Bruno&nbsp;Tomberg, Leila&nbsp;Pärtelpoeg, Vello&nbsp;Asi, Teno&nbsp;Velbri, Mait&nbsp;Summatavet, Taevo&nbsp;Gans, Aulo&nbsp;Padar, Juta&nbsp;Lember, Eerik&nbsp;Olle, Pille&nbsp;Lausmäe, Taso&nbsp;Mähar
 {:.credits}
 
 ##### Kuraator / Curator
-Carl-Dag Lige
+Carl-Dag&nbsp;Lige
 {:.credits}
 
 ##### Produtsent / Producer
-Hannes Praks
+Hannes&nbsp;Praks
 {:.credits}
 
 ##### Näituse kujundus / Exhibition design
-Hannes Praks, Katrin Talvik, Merilin Tee, Sabine Suuster, Martin Saar,
-Karl Taul, Alden Jõgisuu, Tõnu Lensment
+Hannes&nbsp;Praks, Katrin&nbsp;Talvik, Merilin&nbsp;Tee, Sabine&nbsp;Suuster, Martin&nbsp;Saar, Karl&nbsp;Taul, Alden&nbsp;Jõgisuu, Tõnu&nbsp;Lensment
 {:.credits}
 
 ##### Graafiline kujundus / Graphic design
-Aadam Kaarma
+Aadam&nbsp;Kaarma
 {:.credits}
 
 ##### Veebidisain / Web design
-Aadam Kaarma, Mikk Meelak
+Aadam&nbsp;Kaarma, Mikk&nbsp;Meelak
 {:.credits}
 
 ##### Fotograaf / Photography
-Renee Altrov
+Renee&nbsp;Altrov
 {:.credits}
 
 ##### Heli ja elektroonika / Audio and electronics
-Hans-Gunter Lock, Taavi Tulev
+Hans-Gunter&nbsp;Lock, Taavi&nbsp;Tulev
 {:.credits}
 
 ##### Tekstid / Texts
-Carl-Dag Lige
+Carl-Dag&nbsp;Lige
 {:.credits}
 
 ##### Keeletoimetus / Editing
-Katrin Hallas
+Katrin&nbsp;Hallas
 {:.credits}
 
 ##### Tõlge / Translation
-Adam Cullen
+Adam&nbsp;Cullen
 {:.credits}
 
 ##### Korraldajad / Organisers
@@ -89,5 +87,5 @@ Eesti Kultuurkapital / Cultural Endowment of Estonia
 {:.credits}
 
 ##### Täname / Special thanks to
-Leida Tarvas, Raili Morgen, Marit Ilison, Annika Kaldoja, Helen Teetamm, Keiu Albi, Tiiu Saal, Raimond Ummus, Heleri Koltšin, Ardo Hiiuväin, Martin Kukk, Kaarel Kuusk, Sigrid Pavel, Avo Tragel, Mart Saarepuu, Kaido Kruusamets, Triin Ojari, Marju Meschin, Laos Koort, Einar-Rudolf Kiviloo, Mait Väljas, Sandra Kossorotova, Kino Sõprus, Les Petites Disainipood, Liviko, Rahvusooper Estonia, Tallinna Linnateater, Teater NO99, Ugala Teater, Vaba Lava, Vene Teater, Von Krahli Teater, Kanuti Gildi SAAL, Rahva Raamat
+Leida&nbsp;Tarvas, Raili&nbsp;Morgen, Marit&nbsp;Ilison, Annika&nbsp;Kaldoja, Helen&nbsp;Teetamm, Keiu&nbsp;Albi, Tiiu&nbsp;Saal, Raimond&nbsp;Ummus, Heleri&nbsp;Koltšin, Ardo&nbsp;Hiiuväin, Martin&nbsp;Kukk, Kaarel&nbsp;Kuusk, Sigrid&nbsp;Pavel, Avo&nbsp;Tragel, Mart&nbsp;Saarepuu, Kaido&nbsp;Kruusamets, Triin&nbsp;Ojari, Marju&nbsp;Meschin, Laos&nbsp;Koort, Einar-Rudolf&nbsp;Kiviloo, Mait&nbsp;Väljas, Sandra&nbsp;Kossorotova, Kino&nbsp;Sõprus, Les&nbsp;Petites&nbsp;Disainipood, Liviko, Rahvusooper&nbsp;Estonia, Tallinna&nbsp;Linnateater, Teater&nbsp;NO99, Ugala&nbsp;Teater, Vaba&nbsp;Lava, Vene&nbsp;Teater, Von&nbsp;Krahli&nbsp;Teater, Kanuti&nbsp;Gildi&nbsp;SAAL, Rahva&nbsp;Raamat
 {:.credits}
