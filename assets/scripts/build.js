@@ -25,15 +25,6 @@ $(document).ready(function () {
 	setImage();
 	window.onresize = setImage;
 
-	// headers
-	// var $header = $('header');
-	// var $clone = $header.before($header.clone().addClass('clone'));
-
-	// $(window).on('scroll', function() {
-	// 	var fromTop = $(window).scrollTop();
-	// 	$('body').toggleClass('down', (fromTop > startPoint + 90));
-	// });
-
 	if ($('iframe.sc-widget').length) {
 		var player;
 		var pOffset;
