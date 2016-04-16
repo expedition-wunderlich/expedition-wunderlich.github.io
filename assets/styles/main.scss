@@ -179,6 +179,8 @@ h2 {
 		display: block;
 		margin: 1rem;
 
+		font-weight: 300;
+
 		@media (min-width: 42rem) {
 			display: inline-block;
 			margin: 0;
@@ -190,6 +192,7 @@ h2 {
 
 	.year-slash {
 		display: none;
+		padding: 0 0.5rem;
 		@media (min-width: 42rem) { display: inline; }
 	}
 }
