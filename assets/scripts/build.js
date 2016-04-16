@@ -46,8 +46,8 @@ $(document).ready(function () {
 				});
 			};
 
-			// player = SC.Widget($('iframe.sc-widget')[0]);
-			player = SC.Widget(document.getElementById('widget'));
+			player = SC.Widget($('iframe.sc-widget')[0]);
+			// player = SC.Widget(document.getElementById('widget'));
 
 			window.player = player;
 
