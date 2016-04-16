@@ -23,7 +23,11 @@ $(document).ready(function () {
 	}
 
 	setImage();
-	window.onresize = setImage;
+	// window.onresize = setImage;
+
+	window.addEventListener('orientationchange', function() {
+		setImage();
+	}, false);
 
 	if ($('iframe.sc-widget').length) {
 		var player;
