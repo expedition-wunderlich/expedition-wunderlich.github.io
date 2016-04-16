@@ -90,11 +90,13 @@ header {
 				border-bottom: 1px solid transparent;
 			}
 
-			&:hover {
-				text-decoration: none;
+			@media (min-width: 42rem) {
+				&:hover {
+					text-decoration: none;
 
-				.underline {
-					border-bottom: 1px solid $text;
+					.underline {
+						border-bottom: 1px solid $text;
+					}
 				}
 			}
 		}
@@ -131,10 +133,10 @@ header {
 				font-size: $regular-mobile;
 				@media (min-width: 42rem) {
 					font-size: $regular;
-				}
 
-				&:hover {
-					border-bottom: 1px solid $text;
+					&:hover {
+						border-bottom: 1px solid $text;
+					}
 				}
 			}
 		}
@@ -243,8 +245,10 @@ a {
 	color: $text;
 	text-decoration: none;
 
-	&:hover {
-		text-decoration: underline;
+	@media (min-width: 42rem) {
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -262,13 +266,18 @@ footer {
 	margin: 3rem auto 2.4rem;
 	padding: 0 1.2rem;
 
-	@media (min-width: 42rem) { margin: 4.8rem auto 2.4rem; }
+	@media (min-width: 42rem) { margin: 3rem auto 2.4rem; }
 
 	p { margin: 0; }
 
-	// .back-button {
+	.back-button {
+		display: block;
+		margin: 1rem 0 6rem;
 
-	// }
+		font-size: $regular;
+		font-weight: 400;
+		text-align: center;
+	}
 
 	.logos {
 		-js-display: flex;
@@ -287,9 +296,11 @@ footer {
 				fill: #212121;
 			}
 
-			&:hover {
-				.fill-gray {
-					fill: black;
+			@media (min-width: 42rem) {
+				&:hover {
+					.fill-gray {
+						fill: black;
+					}
 				}
 			}
 
@@ -347,7 +358,6 @@ footer {
 		.name {
 			display: inline-block;
 
-			// width: 18.75rem;
 			margin: auto;
 
 			font-family: Montserrat;
@@ -356,13 +366,13 @@ footer {
 			font-weight: bold;
 
 			border-bottom: 2px solid transparent;
-
-		    // word-spacing: 18.75rem;
 		}
 
-		&:hover .name {
-			text-decoration: none;
-			border-bottom: 2px solid $text;
+		@media (min-width: 42rem) {
+			&:hover .name {
+				text-decoration: none;
+				border-bottom: 2px solid $text;
+			}
 		}
 	}
 
@@ -511,8 +521,10 @@ footer {
 				display: none;
 			}
 
-			&:hover {
-				stroke: $foreground;
+			@media (min-width: 42rem) {
+				&:hover {
+					stroke: $foreground;
+				}
 			}
 
 			&:active {
@@ -581,13 +593,8 @@ article {
 	}
 }
 
-.button-back {
-	display: block;
-	margin-bottom: 1rem;
-}
-
 .page- {
-	.button-back {
+	.back-button {
 		display: none;
 	}
 }
