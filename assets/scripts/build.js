@@ -54,8 +54,8 @@ $(document).ready(function () {
 			$('.player-button').on('click', function(e) {
 				e.preventDefault();
 
-				$('.playButton').click();
-				// player.toggle();
+				// $('.playButton').click();
+				player.toggle();
 			});
 
 			player.bind(SC.Widget.Events.READY, function() {
