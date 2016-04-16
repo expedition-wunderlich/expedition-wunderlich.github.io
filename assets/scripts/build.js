@@ -30,8 +30,6 @@ $(document).ready(function () {
 	}, false);
 
 	if ($('iframe.sc-widget').length) {
-		console.log('iframe is');
-
 		var player;
 		var scrub;
 
@@ -53,7 +51,6 @@ $(document).ready(function () {
 			$('.player-button').on('click', function(e) {
 				e.preventDefault();
 
-				console.log('play');
 				player.toggle();
 			});
 
@@ -67,13 +64,11 @@ $(document).ready(function () {
 			});
 
 			player.bind(SC.Widget.Events.PLAY, function() {
-				console.log('PLAY');
 				$('.player-button').addClass('playing');
 				$('.player-button').removeClass('paused');
 			});
 
 			player.bind(SC.Widget.Events.PAUSE, function() {
-				console.log('PAUSE');
 				$('.player-button').removeClass('playing');
 				$('.player-button').addClass('paused');
 			});
@@ -83,7 +78,6 @@ $(document).ready(function () {
 			});
 
 			$('.player').on('click', function() {
-				console.log('player click');
 				$('.position').css('width', scrub + 'px');
 				var seek = player.duration * (scrub / $('.player').width());
 				player.seekTo(seek);
