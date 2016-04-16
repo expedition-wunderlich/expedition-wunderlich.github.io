@@ -583,16 +583,12 @@ article {
 }
 
 iframe {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	right: 0;
 
 	visibility: hidden !important;
-	z-index: -1000;
-
-	* {
-		visibility: hidden !important;
-	}
+	z-index: -5000;
 }
 
 img[data-action="zoom"] {
