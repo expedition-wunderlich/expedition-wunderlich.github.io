@@ -377,7 +377,6 @@ footer {
 .p09 { background-image: url('/images/p09.jpg'); }
 .p10 { background-image: url('/images/p10.jpg'); }
 
-// media
 .image-work {
 	position: relative;
 
@@ -390,6 +389,7 @@ footer {
 
 	margin: 0;
 
+	background-color: $background;
 	background-size: cover;
     background-position: 50% 100%;
 
@@ -583,9 +583,9 @@ article {
 }
 
 iframe {
-	position: fixed;
-	bottom: 0;
-	right: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 
 	visibility: hidden !important;
 	z-index: -5000;
