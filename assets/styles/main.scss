@@ -477,6 +477,8 @@ footer {
 			flex-grow: 1;
 			align-self: center;
 
+			margin-bottom: 0.1rem;
+
 			stroke: #231F20;
 			cursor: pointer;
 
@@ -525,9 +527,9 @@ footer {
 
 			img {
 				width: 6rem;
-				margin-bottom: 0.1rem;
+				margin-bottom: 0;
 
-				@media (min-width: 42rem) { width: 9rem; }
+				@media (min-width: 42rem) { width: 8.8rem; }
 			}
 		}
 	}

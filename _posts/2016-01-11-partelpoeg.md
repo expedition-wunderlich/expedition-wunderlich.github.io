@@ -9,16 +9,16 @@ image_sm:	/images/partelpoeg-front.jpg
 images:
   -
     src: 		/images/partelpoeg-drawing1.jpg
-    caption_et: Kohvik puhkerajooni,  III kursus, 1950, juhendaja P. Tarvas, seinavaade
-    caption_en: Café for a holiday area, 3rd year, 1950, supervisor P. Tarvas, wall view
+    caption_et: Kohvik puhkerajooni,  III kursus, 1950, juhendaja P.&nbsp;Tarvas, seinavaade
+    caption_en: Café for a holiday area, 3rd year, 1950, supervisor P.&nbsp;Tarvas, wall view
   -
     src: 		/images/partelpoeg-drawing2.jpg
-    caption_et: Kohvik puhkerajooni,  III kursus, 1950, juhendaja P. Tarvas, seinavaade
-    caption_en: Café for a holiday area, 3rd year, 1950, supervisor P. Tarvas, wall view
+    caption_et: Kohvik puhkerajooni,  III kursus, 1950, juhendaja P.&nbsp;Tarvas, seinavaade
+    caption_en: Café for a holiday area, 3rd year, 1950, supervisor P.&nbsp;Tarvas, wall view
   -
     src: 		/images/partelpoeg-drawing3.jpg
-    caption_et: Klaasakna kavand, V kursus, 1952, juhendaja E. J. Kuusik
-    caption_en: Sketch for a glass window, 5th year, 1952, supervisor E. J. Kuusik
+    caption_et: Klaasakna kavand, V kursus, 1952, juhendaja E.&nbsp;J.&nbsp;Kuusik
+    caption_en: Sketch for a glass window, 5th year, 1952, supervisor E.&nbsp;J.&nbsp;Kuusik
 ---
 
 {% include image.html image_src="/images/partelpoeg-work.jpg" type="work" %}
