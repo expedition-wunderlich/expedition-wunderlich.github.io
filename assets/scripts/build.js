@@ -46,7 +46,8 @@ $(document).ready(function () {
 				});
 			};
 
-			player = SC.Widget($('iframe.sc-widget')[0]);
+			// player = SC.Widget($('iframe.sc-widget')[0]);
+			player = SC.Widget(document.getElementById('widget'));
 
 			window.player = player;
 
@@ -57,6 +58,7 @@ $(document).ready(function () {
 			});
 
 			player.bind(SC.Widget.Events.READY, function() {
+				console.log('sc ready');
 				setInfo();
 			});
 
@@ -65,11 +67,13 @@ $(document).ready(function () {
 			});
 
 			player.bind(SC.Widget.Events.PLAY, function() {
+				console.log('sc play');
 				$('.player-button').addClass('playing');
 				$('.player-button').removeClass('paused');
 			});
 
 			player.bind(SC.Widget.Events.PAUSE, function() {
+				console.log('sc pause');
 				$('.player-button').removeClass('playing');
 				$('.player-button').addClass('paused');
 			});
