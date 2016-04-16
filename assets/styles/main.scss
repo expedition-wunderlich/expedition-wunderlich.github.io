@@ -582,12 +582,12 @@ article {
 		flex-flow: row wrap;
 		justify-content: center;
 
-		margin: 3rem 1rem;
-		@media (max-width: 28rem) { margin: 1.5rem 1rem; }
+		margin: 1.5rem 1rem;
+		@media (min-width: 42rem) { margin: 3rem 1rem; }
 
 		.drawing {
-			margin: 1.5rem 2.4rem;
-			@media (max-width: 28rem) { margin: 1.5rem 0 0.875rem; }
+			margin: 1.5rem 0 0.875rem;
+			@media (min-width: 42rem) { margin: 1.5rem 2.4rem; }
 
 			img {
 				display: block;
