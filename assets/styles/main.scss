@@ -19,8 +19,6 @@ body {
 	color: $text;
 	background-color: $background;
 
-	// min-width: 22rem;
-
 	font-family: Roboto, Helvetica, sans-serif;
 	font-weight: 300;
 	line-height: 1.4;
@@ -503,7 +501,7 @@ footer {
 			align-self: center;
 
 			height: 1.5625rem;
-			padding-top: 0.15rem;
+			padding-top: 0.1rem;
 
 			stroke: #231F20;
 			cursor: pointer;
