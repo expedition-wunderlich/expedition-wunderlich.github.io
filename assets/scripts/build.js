@@ -48,13 +48,14 @@ $(document).ready(function () {
 
 			player = SC.Widget($('iframe.sc-widget')[0]);
 
+			window.player = player;
+
 			$('.player-button').on('click', function(e) {
 				e.preventDefault();
 
 				player.toggle();
 			});
 
-			// Set info on load
 			player.bind(SC.Widget.Events.READY, function() {
 				setInfo();
 			});
