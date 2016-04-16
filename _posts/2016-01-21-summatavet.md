@@ -9,16 +9,16 @@ image_sm:	/images/summatavet-front.jpg
 images:
   -
     src: 		/images/summatavet-drawing1.jpg
-    caption_et: 600 kohaga klubi Narvas, diplomitöö, 1966, juhendaja E. Velbri, 1. korruse plaan
-    caption_en: 600-person-capacity club in Narva, graduate project, 1966, supervisor E. Velbri, ground-floor plan
+    caption_et: 600 kohaga klubi Narvas, diplomitöö, 1966, juhendaja E.&nbsp;Velbri, 1.&nbsp;korruse plaan
+    caption_en: 600-person-capacity club in Narva, graduate project, 1966, supervisor E.&nbsp;Velbri, ground-floor plan
   -
     src: 		/images/summatavet-drawing2.jpg
-    caption_et: 600 kohaga klubi Narvas, diplomitöö, 1966, juhendaja E. Velbri, peasaali perspektiivvaade
-    caption_en: 600-person-capacity club in Narva, graduate project, 1966, supervisor E. Velbri, perspective view of the main hall
+    caption_et: 600 kohaga klubi Narvas, diplomitöö, 1966, juhendaja E.&nbsp;Velbri, peasaali perspektiivvaade
+    caption_en: 600-person-capacity club in Narva, graduate project, 1966, supervisor E.&nbsp;Velbri, perspective view of the main hall
   -
     src: 		/images/summatavet-drawing3.jpg
-    caption_et: 600 kohaga klubi Narvas, diplomitöö, 1966, juhendaja E. Velbri, saali reatool
-    caption_en: 600-person-capacity club in Narva, graduate project, 1966, supervisor E. Velbri, auditorium theatre seating
+    caption_et: 600 kohaga klubi Narvas, diplomitöö, 1966, juhendaja E.&nbsp;Velbri, saali reatool
+    caption_en: 600-person-capacity club in Narva, graduate project, 1966, supervisor E.&nbsp;Velbri, auditorium theatre seating
 ---
 
 {% include image.html image_src="/images/summatavet-work.jpg" type="work" %}
