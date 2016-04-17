@@ -23,7 +23,6 @@ $(document).ready(function () {
 	}
 
 	setImage();
-	// window.onresize = setImage;
 
 	window.addEventListener('orientationchange', function() {
 		setImage();
