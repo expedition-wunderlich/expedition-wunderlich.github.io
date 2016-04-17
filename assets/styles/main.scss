@@ -238,11 +238,11 @@ h5 {
 }
 
 .text-ref {
-	font-size: $regular-mobile;
+	font-size: 0.9rem;
 	font-weight: 300;
-	margin-bottom: 0;
+	margin: 0 auto;
 
-	@media (min-width: 42rem) { font-size: $small; }
+	// @media (min-width: 42rem) { font-size: $small; }
 }
 
 a {
