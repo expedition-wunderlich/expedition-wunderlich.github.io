@@ -531,7 +531,8 @@ footer {
 
 			.play,
 			.pause {
-				width: 1rem;
+				height: 1rem;
+				margin-bottom: 1px;
 			}
 
 			&.playing .play {
@@ -574,17 +575,18 @@ footer {
 		.player-logo {
 			flex-grow: 9;
 			align-self: center;
+			margin-top: 1px;
 
 			// height: 1.5625rem;
 
 			text-align: right;
 
-			img {
-				width: 6rem;
-				margin-bottom: 0;
+			// img {
+			// 	width: 6rem;
+			// 	margin-bottom: 0;
 
-				@media (min-width: 42rem) { width: 8.8rem; }
-			}
+			// 	@media (min-width: 42rem) { width: 8.8rem; }
+			// }
 		}
 	}
 }
