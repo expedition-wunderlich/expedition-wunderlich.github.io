@@ -284,6 +284,14 @@ a {
 	}
 }
 
+
+.page-info {
+	.back-button-container {
+		margin-top: 3rem;
+		@media (min-width: 42rem) { margin-top: 3rem; }
+	}
+}
+
 footer {
 	max-width: 66rem;
 	margin: 3rem auto 2.4rem;
