@@ -532,7 +532,7 @@ footer {
 			.play,
 			.pause {
 				height: 1rem;
-				margin-bottom: 1px;
+				transform: translateY(-2px);
 			}
 
 			&.playing .play {
