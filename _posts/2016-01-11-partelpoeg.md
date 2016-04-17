@@ -30,7 +30,7 @@ Leila Pärtelpoeg on sisearhitekt, kelle kireks on olnud ajalooliste interjöör
 Leila Pärtelpoeg is an interior architect, whose passion has been the restoration of historical interiors. A large number of Estonia’s manor houses have received historical furnishings carefully collected or designed by her hand during the course of their restoration. She is likewise responsible for the interior designs of many restaurants and shops. Pärtelpoeg worked for years as an instructor of spatial and furniture design at the State Art Institute, also conducting dimensioning internships.
 
 {% include image.html image_src="/images/partelpoeg-portrait.jpg" type="portrait" %}
-{% include player.html audio="//soundcloud.com/user-933497120/leila-partelpoeg-intervjuu-ekspeditsioon-wunderlich-11-sisearhitekti" %}
+{% include player.html title=page.title file="wunderlich-partelpoeg" audio="//soundcloud.com/user-933497120/leila-partelpoeg-intervjuu-ekspeditsioon-wunderlich-11-sisearhitekti" %}
 
 ### Interview. {{ page.title }} (excerpts)
 

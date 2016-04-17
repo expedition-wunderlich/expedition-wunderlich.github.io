@@ -1,4 +1,4 @@
-<h3 class="player-info"></h3>
+<h3 class="player-info">{{ include.title }}, intervjuu</h3>
 
 <section class="audio">
 	<div class="player">
@@ -27,7 +27,7 @@
 	</nav>
 </section>
 
-<iframe class="sc-widget" src="//w.soundcloud.com/player/?url={{ include.audio }}"></iframe>
+<!--<iframe class="sc-widget" src="//w.soundcloud.com/player/?url={{ include.audio }}"></iframe>-->
 
 <script>
 	$(document).ready(function() {
@@ -37,10 +37,10 @@
 		var scrub;
 
 		var sound = new Howl({
-			urls: [ '{{site.baseurl}}/assets/audio/wunderlich-lember.mp3' ],
+			urls: [ '{{site.baseurl}}/assets/audio/{{ include.file }}.mp3' ],
 			onload: function(e) {
 				duration = sound._duration * 1000;
-				console.log(msToTime(sound._duration * 1000));
+				$('.player-duration').html(msToTime(sound._duration * 1000));
 			},
 			onplay: function(e) {
 				isPlaying = true;
@@ -53,6 +53,15 @@
 				isPlaying = false;
 				$('.player-button').removeClass('playing');
 				$('.player-button').addClass('paused');
+
+				window.cancelAnimationFrame(renderer);
+			},
+			onend: function(e) {
+				isPlaying = false;
+				$('.player-button').removeClass('playing');
+				$('.player-button').addClass('paused');
+
+				sound.stop();
 
 				window.cancelAnimationFrame(renderer);
 			}

@@ -30,7 +30,7 @@ Mait Summatavet on sisearhitekt, õppejõud ja disainer, Eesti Kunstiakadeemia e
 Mait Summatavet is an interior architect, instructor, designer, and Professor Emeritus at the Estonian Academy of Arts. He is one of Estonia’s most renowned lighting masters, whose works include a number of full-interior designs. Summatavet adheres to the principles of functionality and constructive clarity. He was a co-author of the interior of the Viru Hotel (1972) and also designed interior spaces for the Ugala Theatre (1976). Summatavet also used to be an outstanding exhibition designer. After Estonia’s re-independence, he helped to modernise the interior solutions for the Bank of Estonia buildings. At the Estonian Academy of Arts he has primarily trained designers.
 
 {% include image.html image_src="/images/summatavet-portrait.jpg" type="portrait" %}
-{% include player.html audio="//soundcloud.com/user-933497120/mait-summatavet-intervjuu-ekspeditsioon-wunderlich-11-sisearhitekti" %}
+{% include player.html title=page.title file="wunderlich-summatavet" audio="//soundcloud.com/user-933497120/mait-summatavet-intervjuu-ekspeditsioon-wunderlich-11-sisearhitekti" %}
 
 ### Interview. {{ page.title }} (excerpts)
 
