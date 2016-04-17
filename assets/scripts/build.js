@@ -365,75 +365,75 @@ $(document).ready(function () {
 		setImage();
 	}, false);
 
-	if ($('iframe.sc-widget').length) {
-		var player;
-		var scrub;
+	// if ($('iframe.sc-widget').length) {
+	// 	var player;
+	// 	var scrub;
 
-		(function () {
-			var setInfo = function setInfo() {
-				player.getCurrentSound(function (song) {
-					$('.player-info').html(song.title);
-					player.current = song;
-				});
+	// 	(function () {
+	// 		var setInfo = function setInfo() {
+	// 			player.getCurrentSound(function (song) {
+	// 				$('.player-info').html(song.title);
+	// 				player.current = song;
+	// 			});
 
-				player.getDuration(function(value) {
-					player.duration = value;
-					$('.player-duration').html(msToTime(player.duration));
-				});
-			};
+	// 			player.getDuration(function(value) {
+	// 				player.duration = value;
+	// 				$('.player-duration').html(msToTime(player.duration));
+	// 			});
+	// 		};
 
-			player = SC.Widget($('iframe.sc-widget')[0]);
+	// 		player = SC.Widget($('iframe.sc-widget')[0]);
 
-			window.player = player;
+	// 		window.player = player;
 
-			$('.player-button').on('click', function(e) {
-				e.preventDefault();
+	// 		$('.player-button').on('click', function(e) {
+	// 			e.preventDefault();
 
-				player.toggle();
-			});
+	// 			player.toggle();
+	// 		});
 
-			player.bind(SC.Widget.Events.READY, function() {
-				setInfo();
-			});
+	// 		player.bind(SC.Widget.Events.READY, function() {
+	// 			setInfo();
+	// 		});
 
-			player.bind(SC.Widget.Events.PLAY_PROGRESS, function(e) {
-				$('.position').css('width', e.relativePosition * 100 + '%');
-			});
+	// 		player.bind(SC.Widget.Events.PLAY_PROGRESS, function(e) {
+	// 			$('.position').css('width', e.relativePosition * 100 + '%');
+	// 		});
 
-			player.bind(SC.Widget.Events.PLAY, function() {
-				$('.player-button').addClass('playing');
-				$('.player-button').removeClass('paused');
-			});
+	// 		player.bind(SC.Widget.Events.PLAY, function() {
+	// 			$('.player-button').addClass('playing');
+	// 			$('.player-button').removeClass('paused');
+	// 		});
 
-			player.bind(SC.Widget.Events.PAUSE, function() {
-				$('.player-button').removeClass('playing');
-				$('.player-button').addClass('paused');
-			});
+	// 		player.bind(SC.Widget.Events.PAUSE, function() {
+	// 			$('.player-button').removeClass('playing');
+	// 			$('.player-button').addClass('paused');
+	// 		});
 
-			$('.player').mousemove(function(e) {
-				scrub = e.pageX - $('.player').offset().left;
-			});
+	// 		$('.player').mousemove(function(e) {
+	// 			scrub = e.pageX - $('.player').offset().left;
+	// 		});
 
-			$('.player').on('click', function() {
-				$('.position').css('width', scrub + 'px');
-				var seek = player.duration * (scrub / $('.player').width());
-				player.seekTo(seek);
+	// 		$('.player').on('click', function() {
+	// 			$('.position').css('width', scrub + 'px');
+	// 			var seek = player.duration * (scrub / $('.player').width());
+	// 			player.seekTo(seek);
 
-				$('.player-seek').html(msToTime(seek));
-			});
-		})();
-	}
+	// 			$('.player-seek').html(msToTime(seek));
+	// 		});
+	// 	})();
+	// }
 });
 
-function msToTime(s) {
-	var ms = s % 1000;
-	s = (s - ms) / 1000;
-	var secs = s % 60;
-	s = (s - secs) / 60;
-	var mins = s % 60;
+// function msToTime(s) {
+// 	var ms = s % 1000;
+// 	s = (s - ms) / 1000;
+// 	var secs = s % 60;
+// 	s = (s - secs) / 60;
+// 	var mins = s % 60;
 
-	if (mins < 10) mins = '0' + mins;
-	if (secs < 10) secs = '0' + secs;
+// 	if (mins < 10) mins = '0' + mins;
+// 	if (secs < 10) secs = '0' + secs;
 
-	return mins + ':' + secs;
-}
+// 	return mins + ':' + secs;
+// }

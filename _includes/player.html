@@ -22,9 +22,78 @@
 		<div class="player-duration">00:00</div>
 
 		<a class="player-logo soundcloud" href="{{ include.audio }}" target="_blank">
-			<img src="{{site.baseurl}}/images/sc_sbs_grey_130x20.png" alt="soundcloud">
+			<img src="{{site.baseurl}}/images/sc_sbs_grey_130x20.png" alt="Listen on Soundcloud">
 		</a>
 	</nav>
 </section>
 
 <iframe class="sc-widget" src="//w.soundcloud.com/player/?url={{ include.audio }}"></iframe>
+
+<script>
+	$(document).ready(function() {
+		var isPlaying = false;
+		var duration = 0;
+		var renderer;
+		var scrub;
+
+		var sound = new Howl({
+			urls: [ '{{site.baseurl}}/assets/audio/wunderlich-lember.mp3' ],
+			onload: function(e) {
+				duration = sound._duration * 1000;
+				console.log(msToTime(sound._duration * 1000));
+			},
+			onplay: function(e) {
+				isPlaying = true;
+				$('.player-button').addClass('playing');
+				$('.player-button').removeClass('paused');
+
+				window.requestAnimationFrame(step);
+			},
+			onpause: function(e) {
+				isPlaying = false;
+				$('.player-button').removeClass('playing');
+				$('.player-button').addClass('paused');
+
+				window.cancelAnimationFrame(renderer);
+			}
+		});
+
+		function step(timestamp) {
+			renderer = window.requestAnimationFrame(step);
+			$('.position').css('width', (sound.pos() / duration * 1000 * 100) + '%');
+			$('.player-seek').html(msToTime(sound.pos() * 1000));
+		}
+
+		$('.player-button').on('click', function(e) {
+			e.preventDefault();
+
+			if (isPlaying) { sound.pause(); }
+			else { sound.play(); }
+		});
+
+		$('.player').mousemove(function(e) {
+			scrub = e.pageX - $('.player').offset().left;
+		});
+
+		$('.player').on('click', function() {
+			$('.position').css('width', scrub + 'px');
+			var seek = duration * (scrub / $('.player').width());
+			sound.pos(seek / 1000);
+
+			$('.player-seek').html(msToTime(seek));
+		});
+
+		function msToTime(s) {
+			var ms = s % 1000;
+			s = (s - ms) / 1000;
+			var secs = s % 60;
+			s = (s - secs) / 60;
+			var mins = s % 60;
+
+			if (mins < 10) mins = '0' + mins;
+			if (secs < 10) secs = '0' + secs;
+
+			return mins + ':' + secs;
+		}
+	});
+</script>
