@@ -38,6 +38,7 @@
 
 		var sound = new Howl({
 			urls: [ '{{site.baseurl}}/assets/audio/{{ include.file }}.mp3' ],
+			buffer: true,
 			onload: function(e) {
 				duration = sound._duration * 1000;
 				$('.player-duration').html(msToTime(sound._duration * 1000));
