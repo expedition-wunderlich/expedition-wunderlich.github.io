@@ -1,6 +1,6 @@
-<h3 class="player-info">{{ include.title }}, intervjuu</h3>
+<h3 class="player-info" style="display: none;">{{ include.title }}, intervjuu</h3>
 
-<section class="audio">
+<section class="audio" style="display: none;">
 	<div class="player">
 		<div class="waveform"></div>
 		<div class="position"></div>
@@ -40,6 +40,9 @@
 			urls: [ '{{site.baseurl}}/assets/audio/{{ include.file }}.mp3' ],
 			buffer: true,
 			onload: function(e) {
+				$('.audio').show();
+				$('.player-info').show();
+
 				duration = sound._duration * 1000;
 				$('.player-duration').html(msToTime(sound._duration * 1000));
 			},
