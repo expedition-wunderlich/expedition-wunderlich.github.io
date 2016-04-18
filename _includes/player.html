@@ -62,6 +62,12 @@
 				$('.player-button').removeClass('playing');
 				$('.player-button').addClass('paused');
 
+				ga('send', {
+					hitType: 'event',
+					eventCategory: 'intervjuu. {{ include.title }}',
+					eventAction: 'pause'
+				});
+
 				window.cancelAnimationFrame(renderer);
 			},
 			onend: function(e) {
@@ -70,6 +76,12 @@
 				$('.player-button').addClass('paused');
 
 				sound.stop();
+
+				ga('send', {
+					hitType: 'event',
+					eventCategory: 'intervjuu. {{ include.title }}',
+					eventAction: 'end'
+				});
 
 				window.cancelAnimationFrame(renderer);
 			}
