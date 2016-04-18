@@ -49,6 +49,12 @@
 				$('.player-button').addClass('playing');
 				$('.player-button').removeClass('paused');
 
+				ga('send', {
+					hitType: 'event',
+					eventCategory: 'intervjuu. {{ include.title }}',
+					eventAction: 'play'
+				});
+
 				window.requestAnimationFrame(step);
 			},
 			onpause: function(e) {
